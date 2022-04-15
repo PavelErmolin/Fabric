@@ -18,12 +18,10 @@ public class Main {
         OtherTopping pepper = new OtherTopping(10,(byte) 5 , true, "Перец");
         OtherTopping pepperChile = new OtherTopping(10,(byte) 8 , true, "Перец чили");
         OtherTopping ketchup = new OtherTopping(35,(byte) 3 , true, "Кетчуп"); */
-        while (true) {
-            Pizza pizza;                                            //Создаю объект пиццы
-            pizza = new PizzaCreator().Create();                    //Запускаю фабрику и получаю готовый объект
-            System.out.println(pizza);                              //Вывод информации о пицце
-            System.out.println("Острота " + pizza.GetSpicy());        //Вывод суммарной остроты пиццы
-            System.out.println("Вес начинки " + pizza.GetWeight());   //Вывод суммарного веса начинки
-        }
-    }
+            Pizza pizza;                                                //Создаю объект пиццы
+            pizza = new PizzaCreator().Create();                        //Запускаю фабрику и получаю готовый объект
+            System.out.println(pizza);                                  //Вывод информации о пицце
+            System.out.println("Острота " + pizza.GetSpicy());          //Вывод суммарной остроты пиццы
+            System.out.println("Вес начинки " + pizza.GetWeight());     //Вывод суммарного веса начинки
+    } // не смог удержаться и не написать main в 5 строк
 }
